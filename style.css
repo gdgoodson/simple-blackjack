@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   padding: 0;
   background-color: #2F3030;
   color: white;
@@ -51,8 +52,9 @@ body {
 
 .card-box {
   margin: 1px;
-  width: 80px;
+  width: 75px;
   height: 127px;
+  margin: 3px;
 }
 
 @keyframes moveCard {
@@ -61,8 +63,10 @@ body {
 }
 .card {
   background-color: white;
-  width: 70px;
-  height: 125px;
+  /*width: 70px;
+  height: 125px;*/
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   animation-name: moveCard;
   animation-duration: 1s;
@@ -88,12 +92,13 @@ body {
 }
 
 .card-top, .card-bottom {
-  height: 35px;
+  /* height: 35px; */
+  height: 20%;
   font-size: 20px;
 }
 
 .card-middle {
-  height: 65px;
+  height: 60%;
   justify-content: center;
   font-size: 40px;
 }
@@ -146,22 +151,73 @@ input {
 @media(max-width: 600px) {
   .container {
     width: 600px;
+    height: 800px;
   }
-  .console {
-    width: 500px;
-    font-size: 20px;
-    height: 40px;
+
+  .table {
+    width: 350px;
+    height: 300px;
   }
-  .controls {
-    width: 500px;
+
+  .top, .middle, .bottom {
+    width: 350px;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
-    height: 125px;
+  }
+
+  .card-box {
+    margin: 1px;
+    width: 50px;
+    height: 80px;
+    margin: 3px;
+  }
+
+  .card {
+    border-radius: 2px;
+    /* animation-name: moveCard;
+    animation-duration: 1s; */
+  }
+
+  .heartsdiamonds {
+    border: 0.5px solid red;
+  }
+
+  .clubsspades {
+    border: 0.5px solid black;
+  }
+
+  .back-card {
+    border: 0.5px solid white;
+  }
+
+  .card-top, .card-middle, .card-bottom {
+    width: 100%;
+  }
+
+  .card-top, .card-bottom {
+    font-size: 15px;
+  }
+
+  .card-middle {
+    font-size: 30px;
+  }
+  .console {
+    width: 350px;
+    font-size: 20px;
+    height: 30px;
+    margin: 0;
+  }
+  .controls {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 180px;
   }
   .controls > div {
     width: 120px;
-    height: 20px;
-    margin: 5px auto;
+    height: 15px;
+    margin: 3px auto;
   }
 
   .wallet-v {
