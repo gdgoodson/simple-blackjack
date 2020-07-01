@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Simple Black Jack</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="console">Black Jack</div>
+      <div class="board">
+        <div class="table">
+          <div class="top">
+            <div id="deal-card-one" class="card-box"></div>
+            <div id="deal-card-two" class="card-box"></div>
+            <div id="deal-card-three" class="card-box"></div>
+            <div id="deal-card-four" class="card-box"></div>
+            <div id="deal-card-five" class="card-box"></div>
+            <div id="deal-card-six" class="card-box"></div>
+          </div> <!-- end top -->
+          <div class="middle"></div>
+          <div class="bottom">
+            <div id="player-card-one" class="card-box"></div>
+            <div id="player-card-two" class="card-box"></div>
+            <div id="player-card-three" class="card-box"></div>
+            <div id="player-card-four" class="card-box"></div>
+            <div id="player-card-five" class="card-box"></div>
+            <div id="player-card-six" class="card-box"></div>
+          </div> <!-- end bottom -->
+        </div> <!-- end table -->
+        <div class="controls">
+            <!-- <div id="deal" class="button">Deal</div> -->
+            <div id="reset" title="This will reset the game." onclick="window.location.reload()" class="button">Reset</div>
+            <div>Your wallet: <div class="wallet-v">$<span id="wallet">200</span></div></div>
+            <div id="bet-div">Enter bet
+            <input id="player-bet" type="number" min="1" placeholder="0"></input></div>
+            <div id="submit-bet" class="button">Bet</div>
+            <div id="hit" class="button">Hit</div>
+            <div id="stay" class="button">Stay</div>
+        </div> <!-- end controls -->
+      </div> <!-- end board -->
+    </div> <!-- end container -->
+  </body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  padding: 0;
+  background-color: #2F3030;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+
+}
+.console {
+  background-color: black;
+  margin: 10px 0;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  border: 5px outset purple;
+  border-radius: 5px;
+  width: 710px;
+  height: 50px;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table {
+  margin: 0;
+  width: 500px;
+  height: 400px;
+  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px outset #C73866;
+  border-radius: 5px;
+}
+
+.top, .middle, .bottom {
+  width: 500px;
+  height: 127px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  margin: 1px;
+  width: 80px;
+  height: 127px;
+}
+
+@keyframes moveCard {
+  from{transform: scale(0.1, 0.1);}
+  to{transform: scale(1, 1);}
+}
+.card {
+  background-color: white;
+  width: 70px;
+  height: 125px;
+  border-radius: 5px;
+  animation-name: moveCard;
+  animation-duration: 1s;
+}
+
+.heartsdiamonds {
+  border: 2px solid red;
+  color: red;
+}
+
+.clubsspades {
+  border: 2px solid black;
+  color: black;
+}
+
+.back-card {
+  border: 2px solid white;
+  background-color: blue;
+}
+
+.card-top, .card-middle, .card-bottom {
+  width: 100%;
+}
+
+.card-top, .card-bottom {
+  height: 35px;
+  font-size: 20px;
+}
+
+.card-middle {
+  height: 65px;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.card-middle {
+  text-align: center;
+}
+
+.card-bottom {
+  text-align: right;
+}
+
+.controls {
+  margin: 0;
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  border: 5px outset #C73866;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.wallet-v {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 0.25em;
+  border: 1px solid #C73866;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+.button {
+  background-color: #C73866;
+  color: white;
+  font-size: 17px;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 0.5em;
+  text-align: center;
+  font-size: 20px;
+  width: 70%;
+}
+
+@media(max-width: 600px) {
+  .container {
+    width: 600px;
+  }
+  .console {
+    width: 500px;
+    font-size: 20px;
+    height: 40px;
+  }
+  .controls {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 125px;
+  }
+  .controls > div {
+    width: 120px;
+    height: 20px;
+    margin: 5px auto;
+  }
+
+  .wallet-v {
+    margin: 2px;
+  }
+}
